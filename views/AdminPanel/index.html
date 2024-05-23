@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant App</title>
+    <link rel="stylesheet" href="/AdminPanel/css/tailwind.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="min-h-100 bg-gray-200">
+    <div class="md:flex min-h-screen md:align-top">
+        <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-pink-700 px-5 py-10">
+            <a href="/AdminPanel/"><img src="/img/logo-mobile.png" alt="Logo" class="w-2/4"></a>
+            <h1 class="uppercase text-white tracking-wide text-2xl  font-bold mt-2">Panel de Administrador</h1>
+            <p class="mt-10 text-white">Crea, Edita y Elimina tus productos</p>
+            <nav class="mt-8">
+                <a  
+                    href="index.html" 
+                    class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400 bg-blue-700"
+                >Productos</a>
+                <a 
+                    href="/AdminPanel/NuevoProducto/index.html" 
+                    class="px-3 py-1 text-white block hover:bg-blue-900 mt-2 hover:text-yellow-400"
+                >Nuevo Producto</a>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <button id="cerrarBtn" class="px-3 py-1 text-white block bg-red-700 hover:bg-red-800 mt-2 hover:text-dark-400">Cerrar Sesión</button>
+            </nav>
+        </aside> <!--sidebar-->
+        <main class="md:w-3/5  xl:w-4/5 px-5 py-10 bg-gray-400">
+            
+
+            
+
+            <h2 class="text-3xl font-light text-center">Productos</h2>
+
+            <div class="flex flex-col mt-10">
+                <div class="py-2 overflow-x-auto">
+                  <div class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+                    <table class="min-w-full">
+                        <thead class="bg-gray-100 ">
+                            <tr>
+                                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Nombre Producto
+                                </th>
+                                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Precio
+                                </th>
+                                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Categoria
+                                </th>
+                                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                    Imagen
+                            </th>
+                                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Acciones
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="listado-Productos" class="bg-white"></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+             
+
+           </main>
+
+           
+
+    </div>
+
+    <!-- TYPE = "MODULE" PARA HACER EL IMPORT -->
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>

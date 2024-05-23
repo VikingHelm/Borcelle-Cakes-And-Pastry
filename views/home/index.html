@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Borcelle Cakes & Pastry</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <nav id="header" class="flex items-center justify-between gap-12">
+    <a href="index.html">
+      <img src="/img/logo-mobile.png" alt="Borcelle" class="logo">
+    </a>
+
+    <div>
+      <ul id="navbar" class="flex items-center justify-center">
+        <li><a href="/" class="active">Inicio</a></li>
+        <li><a href="/menu/" >Menú</a></li>
+        <li><a href="/pedidos/">Pedidos</a></li>
+        <li><a href="/sobreNosotros/">Sobre Nosotros</a></li>
+        <li><a href="/contacto/">Contacto</a></li>
+        <li><a href="/carrito/"><i class="fa fa-shopping-bag fa-2xl shoppingBag"></i></a></li>
+
+
+        <div class="loginBtn">
+          <li><a href="/login/">Login</a></li>
+        </div>
+        <div class="registroBtn">
+          <li><a href="/registro/">Registro</a></li>
+        </div>
+        <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
+
+      </ul>
+    </div>
+
+    </div>
+
+      <div id="cartContainer" class="cartContainer">
+        <div id="cartTitle"></div>
+        <div id="cartItems"></div>
+        <div id="totalAmount"></div>
+        <a href="/carrito/">
+          <div id="cartMain"></div>
+  
+        </a>
+  
+  
+  
+
+      </div>
+
+    
+    <div id="mobile">
+      <a href="/carrito/"><i class="fa fa-shopping-bag fa-2xl text-white font-bold shoppingBag"></i></a>
+      <i id="bar" class="fas fa-outdent"></i>
+
+
+    </div>
+  </nav>
+
+  <section id="hero">
+    <h1 class="title1 max-md:hidden">Date un Gusto</h1>
+    <h1 class="title1 md:hidden text-center">Date un <br><br>Gusto</h1>
+    <p class="p max-md:hidden">Lorem ipsum, dolor sit amet consectetur adipisicing!</p>
+    <p class="p md:hidden text-center">Lorem ipsum, dolor sit amet consectetur adipisicing!</p>
+    <!-- <button class="mainBtn">Ver Catálogo</button> -->
+    <div class="btn-container max-md:hidden">
+      <a class="btn-content" href="/menu/">
+        <span class="btn-title">Ver Catálogo</span>
+        <span class="icon-arrow">
+          <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <path id="arrow-icon-one"
+                d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                fill="#FFFFFF"></path>
+              <path id="arrow-icon-two"
+                d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                fill="#FFFFFF"></path>
+              <path id="arrow-icon-three"
+                d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                fill="#FFFFFF"></path>
+            </g>
+          </svg>
+        </span>
+      </a>
+    </div>
+
+    <div class="btn-container md:hidden btn-containerMobile">
+      <a class="btn-content" href="/menu/">
+        <span class="btn-title">Ver Catálogo</span>
+        <span class="icon-arrow">
+          <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <path id="arrow-icon-one"
+                d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                fill="#FFFFFF"></path>
+              <path id="arrow-icon-two"
+                d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                fill="#FFFFFF"></path>
+              <path id="arrow-icon-three"
+                d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                fill="#FFFFFF"></path>
+            </g>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- <section id="features">
+        <div class="fe-box">
+            
+        </div>
+    </section> -->
+
+  <!-- FEATURES -->
+
+
+
+  <div class="astrodivider">
+    <div class="astrodividermask"></div><span><i>&#10038;</i></span>
+  </div>
+
+  <div class="container containerCategories">
+    <div class="sectionTitle flex flex-col">
+      
+      <h2 class="text-3xl font-bold text-gray-800 uppercase pt-12 mb-24 title-bg">Nuestro Menú<div class="border-bottom"></div> </h2>
+      
+      </div>
+    <!-- <h2 class="text-3xl font-bold text-gray-800 uppercase mb-16 title-bg">Nuestras Categorías</h2> -->
+    <div class="gap-12 gridOverlay">
+      <div class="relative rounded-2xl overflow-hidden group">
+        <img src="/img/slices.webp" alt="category 1" class="w-full">
+        <a href="/menu/"
+          class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center  text-white font-medium group-hover:bg-opacity-60 transition categories">Slices</a>
+      </div>
+      <div class="relative rounded-2xl overflow-hidden group">
+        <img src="/img/cupcakes.jpg" alt="category 1" class="w-full">
+        <a href="/menu/"
+          class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center  text-white font-medium group-hover:bg-opacity-60 transition categories">Cupcakes</a>
+      </div>
+      <div class="relative rounded-2xl overflow-hidden group">
+        <img src="/img/pan.webp" alt="category 1" class="w-full">
+        <a href="/menu/"
+          class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center  text-white font-medium group-hover:bg-opacity-60 transition categories">Panes</a>
+      </div>
+      <div class="relative rounded-2xl overflow-hidden group">
+        <img src="/img/galletas.webp" alt="category 1" class="w-full">
+        <a href="/menu/"
+          class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center  text-white font-medium group-hover:bg-opacity-60 transition categories">Galletas</a>
+      </div>
+      <div class="relative rounded-2xl overflow-hidden group">
+        <img src="/img/suspiros.jpg" alt="category 1" class="w-full">
+        <a href="/menu/"
+          class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center  text-white font-medium group-hover:bg-opacity-60 transition categories">Suspiros</a>
+      </div>
+      <div class="relative rounded-2xl overflow-hidden group">
+        <img src="/img/bebidas.jpg" alt="category 1" class="w-full">
+        <a href="/menu/"
+          class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center  text-white font-bold group-hover:bg-opacity-60 transition categories">Bebidas</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="astrodivider">
+    <div class="astrodividermask"></div><span><i>&#10038;</i></span>
+  </div>
+
+  <div class="container containerPedidos">
+    <div class="sectionTitle flex flex-col">
+
+      <h2 class="text-3xl font-bold text-gray-800 uppercase pt-4 mb-16 title-bg">Pedidos<div class="border-bottom"></div>
+      </h2>
+
+    </div>
+    <!-- <h2 class="text-3xl font-bold text-gray-800 uppercase mb-16 title-bg">Pedidos</h2> <div class="pedidos"> -->
+    <div class="displayMainBackground pt-6 pb-14 pl-6 pr-4 max-w-max">
+      <div class="displayMain pt-8 text-center align-middle justify-center max-md:hidden">
+        <div class="img-hover-zoom--blur pedidosDiv">
+          <img src="/img/divMain1.jpg" alt="cake" class="cake object-cover gap-1 p-2">
+
+        </div>
+        <div class="img-hover-zoom--blur pedidosDiv">
+          <img src="/img/divMain2(1).jpg" alt="cake" class="cake object-cover  gap-1 p-2">
+
+        </div>
+        <div class="gap-1 p-2 pl-4 text-lg text-center flex flex-col">
+          <br>
+          <h2 class="font-bold text-center leading-10 lorem">¿Lorem?</h2>
+          <h1 class="title font-extrabold text-center">DULCES PARA TI</h1>
+          <br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cumque dolores sequi distinctio
+            necessitatibus fuga expedita at, quasi doloribus quaerat voluptatem, quia ipsum nam dignissimos.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus exercitationem molestiae aperiam
+            dicta ratione perspiciatis in expedita. Eligendi, obcaecati enim.</p>
+          <br>
+          <a href="/pedidos/">
+            <button class="button-55" role="button">VER PEDIDOS</button>
+
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-col pt-8 text-center align-middle justify-center md:hidden">
+        <div class="gap-1 p-2 pl-4 text-lg text-center flex flex-col">
+          <h2 class="font-bold text-center leading-10 lorem">¿Lorem?</h2>
+          <h1 class="title font-extrabold text-center">DULCES PARA TI</h1>
+          <br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cumque dolores sequi distinctio
+            necessitatibus fuga expedita at, quasi doloribus quaerat voluptatem, quia ipsum nam dignissimos.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus exercitationem molestiae aperiam
+            dicta ratione perspiciatis in expedita. Eligendi, obcaecati enim.</p>
+          <br>
+          <a href="/menu/">
+            <button class="button-55" role="button">VER PEDIDOS</button>
+
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="astrodivider">
+    <div class="astrodividermask"></div><span><i>&#10038;</i></span>
+  </div>
+
+  <div class="container containerFeatures">
+    <div class="sectionTitle flex flex-col">
+
+      <h2 class="text-3xl font-bold text-gray-800 uppercase pt-4 mb-16 title-bg">Beneficios<div class="border-bottom"></div>
+      </h2>
+
+    </div>
+
+    <div class="w-10/12 grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto justify-center">
+      <div class="features border border-primary bg-white rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+        <img src="/img/delivery-van.svg" alt="Delivery" class="w-12 h-12 object-contain">
+        <div>
+          <h4 class="font-medium capitalize text-lg">Envíos Gratuitos</h4>
+          <p class="text-gray-500 text-sm">Pedidos sobre $200</p>
+        </div>
+      </div>
+      <div class="features border border-primary bg-white rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+        <img src="/img/money-back.svg" alt="Delivery" class="w-12 h-12 object-contain">
+        <div>
+          <h4 class="font-medium capitalize text-lg">Devoluciones Sencillas</h4>
+          <p class="text-gray-500 text-sm">Devolución de 30 días</p>
+        </div>
+      </div>
+      <div class="features border border-primary bg-white rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+        <img src="/img/service-hours.svg" alt="Delivery" class="w-12 h-12 object-contain">
+        <div>
+          <h4 class="font-medium capitalize text-lg">Atención 24/7</h4>
+          <p class="text-gray-500 text-sm">Atención al cliente</p>
+        </div>
+      </div>
+    </div>
+    <h2 class="featuresPaymentTitle font-bold text-gray-800 uppercase mt-16 mb-16">Contamos con...</h2>
+    <div class="featuresPaymentImg">
+      <img src="/img/paymentImg1.png" alt="PaymentWays" class="w-96">
+    </div>
+  </div>
+
+
+
+  <!-- FOOTER -->
+
+
+  <footer class="footer">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+          <a href="/" class="flex items-center">
+            <img src="/img/logo-mobile.png" class="h-24 me-3" alt="FlowBite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Borcelle Cakes &
+              Pastry</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Navegación</h2>
+            <ul class="text-gray-200 dark:text-gray-200 font-medium">
+              <li class="mb-4">
+                <a href="/" class="hover:underline">Inicio</a>
+              </li>
+              <li class="mb-4">
+                <a href="/menu/" class="hover:underline">Menú</a>
+              </li>
+              <li class="mb-4">
+                <a href="/pedidos/" class="hover:underline">Pedidos</a>
+              </li>
+              <li class="mb-4">
+                <a href="/sobreNosotros/" class="hover:underline">Sobre Nosotros</a>
+              </li>
+              <li class="mb-4">
+                <a href="/contacto/" class="hover:underline">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+            <ul class="text-gray-200 dark:text-gray-200 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:underline ">Instagram</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Facebook</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Twitter</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+            <ul class="text-gray-200 dark:text-gray-200 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Política de Privacidad</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Términos &amp; Condiciones</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-200 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-gray-200 sm:text-center dark:text-gray-200">© 2024 <a href="#"
+            class="hover:underline">NandoDev™</a>. Todos los derechos reservados.
+        </span>
+        <div class="flex mt-4 sm:justify-center sm:mt-0">
+          <a href="#" class="text-gray-200 hover:text-gray-900 dark:hover:text-white">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 8 19">
+              <path fill-rule="evenodd"
+                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only">Facebook</span>
+          </a>
+          <a href="#" class="text-gray-200 hover:text-gray-900 dark:hover:text-white ms-5">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 20 17">
+              <path fill-rule="evenodd"
+                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only">Twitter</span>
+          </a>
+          <a href="#" class="text-gray-200 hover:text-gray-900 dark:hover:text-white ms-5">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-instagram" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>

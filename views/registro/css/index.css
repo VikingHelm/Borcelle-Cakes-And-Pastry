@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+  font-family: "Spartan", sans-serif;
+  background-color: #faf4e5
+}
+
+.title1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+.title2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+.title4 {
+  font-size: 20px;
+  color: #222;
+}
+
+.title6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.p {
+  font-size: 16px;
+  margin: 15px 0 20px 0;
+  color: #465b52;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+/* NAVBAR */
+#header {
+    padding: 30px 80px;
+    background-color: #131313;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+    z-index: 5;
+    position: sticky;
+    top: 0;
+    left: 0;
+  
+  }
+  
+  .logo {
+    /* margin-top: -10px;
+      width: 15rem;
+      height: 3rem; */
+    margin-top: -7px;
+    z-index: 10;
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    top: 0px;
+  
+  }
+  
+  #navbar li {
+    padding: 0 20px;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 0 1px #000000, 0 0 1px #000000;
+    transition: 0.8s ease-in-out;
+    position: relative;
+  
+  }
+  
+  #navbar li a:hover,
+  #navbar li a.active {
+    color: #ea157c;
+    transition: 0.1s ease-in-out;
+  }
+  
+  #navbar li a.active::after,
+  #navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #ea157c;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    transition: 1s ease-in-out;
+  }
+  
+  #mobile {
+    display: none;
+    align-items: center;
+    color: black;
+  }
+  
+  .loginBtn{
+    border: 1px solid blanchedalmond;
+    padding: .8rem 1.6rem;
+    border-radius: 2px 0 0 2px;
+    cursor: pointer;
+  }
+  
+  .registroBtn{
+    border: 1px solid blanchedalmond;
+    background-color: rgb(255, 247, 233);
+    border-radius: 0px 2px 2px 0;
+  
+    padding: .8rem 1.6rem;
+    cursor: pointer;
+  
+  }
+  
+  .loginBtn:hover {
+    background: #222;
+  }
+  
+  .registroBtn:hover {
+    background-color: rgb(253, 232, 197);
+  
+  }
+  
+  @media (max-width: 1289px) {
+    .logo {
+      /* margin-top: -10px;
+        width: 15rem;
+        height: 3rem; */
+      margin-top: -7px;
+      margin-left: -38px;
+      z-index: 10;
+      height: 10rem;
+      width: 10rem;
+      position: absolute;
+      top: 0px;
+  
+    }
+  
+    .loginBtn {
+      padding: 0;
+      background-color: transparent;
+      border: none;
+    }
+  
+    .registroBtn {
+      padding: 0;
+      background-color: transparent;
+      border: none;
+    }
+  
+    .registroBtn:hover {
+      padding: 0;
+      background-color: transparent;
+      border: none; 
+    }
+  
+  
+  
+    #navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      right: -2000px;
+      padding-top: 3rem;
+      height: 100vh;
+      width: 50%;
+      background-color: #222;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+      transition: 0.5s;
+  
+      /* padding: 80px 0 0 10px */
+    }
+  
+    #navbar.active {
+      right: 0px;
+    }
+  
+    #navbar li {
+      margin-bottom: 28px;
+    }
+  
+    #mobile {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: #fff;
+    }
+  
+    #mobile i {
+      color: #fff;
+      font-size: 34px;
+      padding-left: 20px;
+      cursor: pointer;
+    }
+  
+    #close {
+      position: absolute;
+      top: 0px;
+      left: 80%;
+      right: 30px;
+      color: #fff;
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .btn-container span {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 759px) {
+  
+    #navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      margin-left: 50px;
+      top: 0;
+      right: -400;
+      height: 100vh;
+      width: 300px;
+      background-color: #222;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+
+
+
+
+/* HOVER CART  */
+
+
+.cartContainer {
+  display: none;
+  position: absolute;
+  top: 89px;
+  right: 85px;
+  width: 30%;
+  height: auto;
+  border: 1px solid #585757; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1); 
+  
+}
+
+#cartTitle {
+  background: #222;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: .4rem 0;
+  
+}
+
+#cartItems {
+  background: #fff;
+
+}
+
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+
+.itemImg {
+  height: 50px;
+  width: 50px;
+}
+
+/* .deleteItemBtn {
+   position: absolute;
+  top: 5px;
+  right: 5px; 
+  cursor: pointer;
+}
+*/
+
+.deleteItemBtn:hover { 
+  cursor: pointer;
+  color: red;
+}
+
+.cartItem:hover {
+  background: #f9f9f9;
+}
+
+
+#totalAmount {
+  font-weight: 700;
+  color: #fff;
+  background: #222;
+  text-align: end;
+  padding-right: 10px;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+
+
+}
+
+
+
+.cartMainBtn {
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  background: rgb(189, 44, 87);
+}
+
+.cartMainBtn:hover {
+  font-weight: 700;
+  color: #fff;
+  background: rgb(123, 18, 50);
+
+
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+}
+
+.emptyCartMessage {
+  text-align: center;
+  padding: .3rem 0;
+  font-weight: 600;
+}
+
+.registerBackground {
+  background: url(/img/background-menu.jpg);
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.formRegister {
+  background:rgb(253, 232, 197);
+  border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* FOOTER  */
+.footer {
+  /* background: rgb(250, 163, 163); */
+  /* background: rgb(234, 114, 150); */
+  background: rgb(189, 44, 87);
+  background-size: cover;
+  min-width: 100%;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}

@@ -1,0 +1,617 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body {
+  font-family: "Spartan", sans-serif;
+  background-color: #faf4e5
+}
+
+.title1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+.title2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+.title4 {
+  font-size: 20px;
+  color: #222;
+}
+
+.title6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.p {
+  font-size: 16px;
+  margin: 15px 0 20px 0;
+  color: #465b52;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+/* NAVBAR */
+#header {
+    padding: 30px 80px;
+    background-color: #131313;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+    z-index: 5;
+    position: sticky;
+    top: 0;
+    left: 0;
+  
+  }
+  
+  .logo {
+    /* margin-top: -10px;
+      width: 15rem;
+      height: 3rem; */
+    margin-top: -7px;
+    z-index: 10;
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    top: 0px;
+  
+  }
+  
+  #navbar li {
+    padding: 0 20px;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 0 1px #000000, 0 0 1px #000000;
+    transition: 0.8s ease-in-out;
+    position: relative;
+  
+  }
+  
+  #navbar li a:hover,
+  #navbar li a.active {
+    color: #ea157c;
+    transition: 0.1s ease-in-out;
+  }
+  
+  #navbar li a.active::after,
+  #navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #ea157c;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    transition: 1s ease-in-out;
+  }
+  
+  #mobile {
+    display: none;
+    align-items: center;
+    color: black;
+  }
+  
+  .loginBtn{
+    border: 1px solid blanchedalmond;
+    padding: .8rem 1.6rem;
+    border-radius: 2px 0 0 2px;
+    cursor: pointer;
+  }
+  
+  .registroBtn{
+    border: 1px solid blanchedalmond;
+    background-color: rgb(255, 247, 233);
+    border-radius: 0px 2px 2px 0;
+  
+    padding: .8rem 1.6rem;
+    cursor: pointer;
+  
+  }
+  
+  .loginBtn:hover {
+    background: #222;
+  }
+  
+  .registroBtn:hover {
+    background-color: rgb(253, 232, 197);
+  
+  }
+  
+  @media (max-width: 1289px) {
+    .logo {
+      /* margin-top: -10px;
+        width: 15rem;
+        height: 3rem; */
+      margin-top: -7px;
+      margin-left: -38px;
+      z-index: 10;
+      height: 10rem;
+      width: 10rem;
+      position: absolute;
+      top: 0px;
+  
+    }
+  
+    .loginBtn {
+      padding: 0;
+      background-color: transparent;
+      border: none;
+    }
+  
+    .registroBtn {
+      padding: 0;
+      background-color: transparent;
+      border: none;
+    }
+  
+    .registroBtn:hover {
+      padding: 0;
+      background-color: transparent;
+      border: none; 
+    }
+  
+  
+  
+    #navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      right: -2000px;
+      padding-top: 3rem;
+      height: 100vh;
+      width: 50%;
+      background-color: #222;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+      transition: 0.5s;
+  
+      /* padding: 80px 0 0 10px */
+    }
+  
+    #navbar.active {
+      right: 0px;
+    }
+  
+    #navbar li {
+      margin-bottom: 28px;
+    }
+  
+    #mobile {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: #fff;
+    }
+  
+    #mobile i {
+      color: #fff;
+      font-size: 34px;
+      padding-left: 20px;
+      cursor: pointer;
+    }
+  
+    #close {
+      position: absolute;
+      top: 0px;
+      left: 80%;
+      right: 30px;
+      color: #fff;
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .btn-container span {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 759px) {
+  
+    #navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      margin-left: 50px;
+      top: 0;
+      right: -400;
+      height: 100vh;
+      width: 300px;
+      background-color: #222;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+
+
+/* ALERT  */
+.alert-globe {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: block;
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.alert-globe-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: red; /* Add this line */
+}
+
+.alert-globe-timebar {
+  position: relative;
+  height: 5px; /* Add this line */
+  background-color: white; /* Add this line */
+  margin-top: 10px;
+}
+
+
+
+/* CART DISPLAY */
+.cartTitle {
+  min-height: 50vh;
+  background: grey;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(/img/titleMenu.jpg);
+  background-size: cover;
+  min-width: 100%;
+}
+
+.cartTitle h1 {
+  align-self: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  font-family: "Great Vibes", cursive;
+  color: #faf4e5;
+  text-shadow: 3px 3px 4px black;
+  font-size: 3rem;
+}
+
+
+.cart-titles {
+  font-weight: 700;
+  color: white;
+  background: rgb(22, 22, 22);
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+}
+
+.cart-item-bg {
+  background: #fff;
+
+}
+
+.cart-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.cart-item h2 {
+  margin: 0;
+}
+
+.cart-item input {
+  text-align: center;
+  width: 50px;
+  height: 30px;
+}
+
+@media (max-width: 680px) {
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid black;
+  }
+  
+  .cart-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+  }
+  
+  .cart-item h2 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .cart-item input {
+    text-align: center;
+    width: 50px;
+    height: 30px;
+  }
+  
+  .cart-item button {
+    align-self: flex-end;
+  }
+}
+
+.cartItemDisplay {
+  padding: 4rem;
+}
+
+#cartItems {
+  border: 2px solid black;
+  background: rgb(255, 255, 238)
+
+}
+
+
+
+.totalDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-right: 20%;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: white;
+  background: rgb(35, 35, 35);
+}
+
+@media (max-width: 680px) {
+  .totalDiv {justify-content: space-between;
+    padding: 1rem;
+    padding-right: 0;}
+}
+
+.emptyCartButton {
+  text-decoration: underline;
+}
+
+.emptyCartButton:hover {
+  color: red;
+  transition: .5s;
+}
+
+
+/* PAYMENT */
+.cartPayment {
+  display: flex;
+    flex-direction: row;
+  padding-top: 0px;
+}
+
+@media (max-width: 880px) {
+  .cartPayment {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.checkout-btn, .coupon-btn {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #ffffff;
+  background: rgb(54, 54, 54);
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 0 rgb(174, 15, 63);
+}
+
+.checkout-btn:hover, .coupon-btn:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 rgb(189, 44, 87);
+}
+
+.checkout-btn:active, .coupon-btn:active {
+  transform: scale(0.9);
+}
+
+
+/* COUPONS  */
+.couponSection {
+  border: 1px solid black;
+}
+
+.couponTitle {
+  background: rgb(189, 44, 87);
+}
+
+.couponData {
+  border-top: 1px solid #222;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 640px) {
+ .couponData {
+  display: flex;
+  flex-direction: column;
+ } 
+}
+
+.coupon-btn {
+  margin: 0;
+  border: none;
+  border-radius: 0px;
+  width: 100%;
+}
+
+@media (max-width: 440px) {
+
+}
+
+.couponInput {
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+/* PAYMENT METHODS */
+.paymentSection {
+  border: 1px solid black;
+}
+
+
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  padding: 10px;
+  border: 3px solid grey;
+  border-radius: 9px;
+  background: lightgrey;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  border: 3px solid blue;
+  background: lightblue;
+  transition: .8s;
+}
+
+
+
+/* PAYMENT SELECTORS */
+.paymentMethodsBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  align-content: center;
+}
+
+.paymentOption {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1168px) {
+  .paymentMethodsBox {
+    grid-template-columns: repeat(3, 2fr);
+  }
+}
+
+@media (max-width: 1167px) {
+  .paymentMethodsBox {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+@media (max-width: 1080px) {
+  .paymentMethodsBox {
+    grid-template-columns: 1fr;
+  }
+}
+
+.paymentImg {
+  margin-bottom: 10px;
+  width: 10rem;
+  height: 4rem;
+}
+
+/* TOTAL PAYMENT TEXT  */
+.totalPayPal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.totalPayPal h1 {
+  margin: 0;
+  padding: 8px;
+}
+
+@media (max-width: 1080px) {
+  .totalPayPal h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 968px) {
+  .totalPayPal {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .totalPayPal h1 {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* FOOTER  */
+.footer {
+  /* background: rgb(250, 163, 163); */
+  /* background: rgb(234, 114, 150); */
+  background: rgb(189, 44, 87);
+  background-size: cover;
+  min-width: 100%;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}

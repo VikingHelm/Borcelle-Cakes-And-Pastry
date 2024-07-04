@@ -5,17 +5,20 @@ const Product = require('../models/product');
 const getAllProducts = async () => {
   try {
     const products = await Product.find();
-    console.log(products);
+    return products;
   } catch (error) {
     console.error(error);
     return null;
   }
 };
+
 productsRouter.get('/products', async (req, res) => {
   try {
     const products = await getAllProducts();
+    if (!products) {
+      return res.status(404).json({ message: 'No se encontraron productos.' });
+    }
     res.json(products);
-    console.log(products);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }

@@ -2,6 +2,15 @@ const productsRouter = require('express').Router();
 const Product = require('../models/product');
 
 // GET ALL PRODUCTS
+// const getAllProducts = async () => {
+//   try {
+//     const products = await Product.find();
+//     console.log(products);
+//   } catch (error) {
+//     console.error(error);
+//     return null;
+//   }
+// };
 productsRouter.get('/products', async (req, res) => {
   try {
     const products = await Product.find();

@@ -2,9 +2,19 @@ const productsRouter = require('express').Router();
 const Product = require('../models/product');
 
 // GET ALL PRODUCTS
-productsRouter.get('/products', async (req, res) => {
+const getAllProducts = async () => {
   try {
     const products = await Product.find();
+    return products;
+  } catch (error) {
+    console.error(error);
+    return null;
+  }
+};
+
+productsRouter.get('/products', async (req, res) => {
+  try {
+    const products = await getAllProducts();
     res.json(products);
   } catch (error) {
     res.status(500).json({ message: error.message });

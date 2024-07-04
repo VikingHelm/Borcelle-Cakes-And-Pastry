@@ -101,7 +101,7 @@ function hideCart() {
 
 // MAIN JS
 
-const url = "http://localhost:3000/api/products/products";
+const url = "https://borcelle-cakes-and-pastry.onrender.com/api/products/products";
 
 let productsData = [];
 

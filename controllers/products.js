@@ -13,7 +13,7 @@ const Product = require('../models/product');
 // };
 productsRouter.get('/products', async (req, res) => {
   try {
-    const products = await Product.find();
+    const products = await getAllProducts();
     res.json(products);
   } catch (error) {
     res.status(500).json({ message: error.message });
